@@ -2,7 +2,7 @@ import java.util.*;
 
 public class ComicBooks{
     public static void main(String[] args){
-        HashMap quality=new HashMap();
+        HashMap<String,Float> quality=new HashMap<String,Float>();
         float price1=3.00F;
         quality.put("mint", price1);
         float price2=2.00F;
@@ -15,6 +15,10 @@ public class ComicBooks{
         quality.put("good", price5);
         float price6=0.25F;
         quality.put("poor", price6);
+        float price7=5.00F;
+        quality.put("pristine mint", price7);
+        float price8=0.10F;
+        quality.put("coverless", price8);
         Comic[] comix=new Comic[3];
         comix[0]=new Comic("Amazing Spider-man","1A","very fine",5000.00F);
         comix[0].setPrice((Float)quality.get(comix[0].condition));
