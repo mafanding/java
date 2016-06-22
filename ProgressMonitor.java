@@ -6,7 +6,7 @@ public class ProgressMonitor extends JFrame{
     JProgressBar current;
     JTextArea out;
     JButton find;
-    Thread runner;
+    //Thread runner;
     int num=0;
 
     ProgressMonitor(){
